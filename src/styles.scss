@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+$colors: (
+
+primary: #005DFF,
+accent: #FFF6BB,
+primary-light: lighten(#005DFF, 40%),
+primary-dark: darken(#005DFF, 40%)
+);
+
+$padding: 15px;
+
+$desktop: 840px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@function color($color-name) {
+  @return map-get($colors, $color-name)
+}
+
+html, body {
+
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
