@@ -1,11 +1,25 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/home/home.component';
+import { ResponsiveComponent } from './components/responsive/responsive.component';
+import { AboutComponent } from './components/responsive/about/about.component';
+import { ServicesComponent } from './components/responsive/services/services.component';
+import { ResponsiveHomeComponent } from './components/responsive/home/responsivehome.component';
 
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path: '**', pathMatch: 'full', redirectTo: 'home'}
+  { path: 'home', component: HomeComponent },
+  {
+    path: 'responsive',
+    component: ResponsiveComponent,
+    children: [
+      { path: '', component: ResponsiveHomeComponent },
+      { path: 'about', component: AboutComponent },
+      { path: 'services', component: ServicesComponent }
+    ]
+  },
+
+  { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
 @NgModule({

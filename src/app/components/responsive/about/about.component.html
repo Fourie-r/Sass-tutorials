@@ -1,0 +1,66 @@
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight"> Responsive </span> Design</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a [routerLink]="['/responsive']">Home</a></li>
+        </ul>
+        <ul>
+          <li class="current"><a>About</a></li>
+        </ul>
+        <ul>
+          <li>
+            <a
+              [routerLink]="['../services']"
+              routerLinkActive="router-link-active"
+              >Services</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="newsletter">
+    <div class="container">
+      <h1>Subscribe to Newsletter</h1>
+      <form action="">
+        <input type="email" placeholder="Enter email" />
+        <button type="submit" class="button_1">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="main">
+    <div class="container">
+      <article id="main-col">
+        <h1 class="page-title">About us</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
+          maiores magnam ipsum corrupti dolorum voluptas quaerat? Aut nulla
+          perferendis voluptatem.
+        </p>
+        <p class="dark">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
+          maiores magnam ipsum corrupti dolorum voluptas quaerat? Aut nulla
+          perferendis voluptatem.
+        </p>
+      </article>
+
+      <aside id="sidebar">
+        <div class="dark">
+          <h3>What we do</h3>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sit?
+          </p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <footer><p>Sass Web Design, Copyright &copy; 2018</p></footer>
+</body>

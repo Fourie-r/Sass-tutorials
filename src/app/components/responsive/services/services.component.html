@@ -1,0 +1,92 @@
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight"> Responsive </span> Design</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a [routerLink]="['/responsive']">Home</a></li>
+        </ul>
+        <ul>
+          <li><a [routerLink]="['../about']">About</a></li>
+        </ul>
+        <ul>
+          <li class="current">
+            <a>Services</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="newsletter">
+    <div class="container">
+      <h1>Subscribe to Newsletter</h1>
+      <form action="">
+        <input type="email" placeholder="Enter email" />
+        <button type="submit" class="button_1">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="main">
+    <div class="container">
+      <article id="main-col">
+        <h1 id="title"> Services </h1>
+        <div class="content">
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quas
+            praesentium quis, amet, aliquid molestiae id quo beatae ab iste
+            eveniet nesciunt eius repellat nihil numquam excepturi? Voluptatem,
+            molestiae tempora!
+          </p>
+        </div>
+        <div class="content">
+          <label>Website Maintenance</label>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quas
+            praesentium quis, amet, aliquid molestiae id quo beatae ab iste
+            eveniet nesciunt eius repellat nihil numquam excepturi? Voluptatem,
+            molestiae tempora!
+          </p>
+        </div>
+        <div class="content">
+          <label>Website Hosting</label>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quas
+            praesentium quis, amet, aliquid molestiae id quo beatae ab iste
+            eveniet nesciunt eius repellat nihil numquam excepturi? Voluptatem,
+            molestiae tempora!
+          </p>
+        </div>
+      </article>
+
+      <aside id="sidebar">
+        <div class="dark">
+          <h3>Get A Quote</h3>
+
+          <form action="" class="form-quote">
+            <label>Name</label> <br>
+            <input class="form-input" type="text" placeholder="name" />
+
+            <label>Email</label> <br>
+            <input
+              class="form-input"
+              type="email"
+              placeholder="Email Address"
+            />
+
+            <label>Message</label> <br>
+            <input id="message" type="textarea" placeholder="Message" />
+            <button class="button_1" type="submit">Save!</button>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <footer><p>Sass Web Design, Copyright &copy; 2018</p></footer>
+</body>
