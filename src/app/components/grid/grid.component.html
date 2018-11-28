@@ -1,0 +1,119 @@
+<div class="grid">
+  <section id="section1_header">
+    <app-header class="header"></app-header>
+  </section>
+
+  <section id="section2_sub-header">
+    <app-sub-header class="sub-header"></app-sub-header>
+  </section>
+
+  <section id="section3_images">
+    <div class="content">
+      <div class="multiple-photos">
+        <div class="bannerText">
+        <h3>Finde dein perfektes Smartphone!</h3>
+        <p>Die beste smartphones fur jedes Anlass!</p>
+        <button class="button_zumShop">zum Shop</button>
+        </div>
+        <img class="banner_images_left" src="/assets/grid.component/grid-assets/assets/main-teaser-left-side.png">
+        <img class="banner_images_center" src="/assets/grid.component/grid-assets/assets/main-teaser-center.png">
+        <img class="banner_images_right" src="/assets/grid.component/grid-assets/assets/main-teaser-side.png">
+      </div>
+      <div class="two_photos">
+
+        <div id="photo_1">
+          <h3>Galaxy S8</h3>
+          <button class="button_zumShop">Zum shop</button>
+        </div>
+
+        <div id="photo_2">
+          <h3>Honor 9</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section4_brands">
+    <div class="brands">
+      <img
+        class="brand_images"
+        src="/assets/grid.component/grid-assets/assets/brands/lenovo.png"
+      />
+      <img
+        class="brand_images"
+        src="/assets/grid.component/grid-assets/assets/brands/asus.png"
+      />
+      <img
+        class="brand_images"
+        id="icon"
+        src="/assets/grid.component/grid-assets/assets/brands/apple.png"
+      />
+      <img
+        class="brand_images"
+        src="/assets/grid.component/grid-assets/assets/brands/dell.png"
+      />
+      <img
+        class="brand_images"
+        src="/assets/grid.component/grid-assets/assets/brands/htc.png"
+      />
+      <img
+        class="brand_images"
+        id="icon"
+        src="/assets/grid.component/grid-assets/assets/brands/lg.png"
+      />
+      <img
+        class="brand_images"
+        src="/assets/grid.component/grid-assets/assets/brands/motorola.png"
+      />
+      <img
+        class="brand_images"
+        src="/assets/grid.component/grid-assets/assets/brands/nokia.png"
+      />
+      <img
+        class="brand_images"
+        src="/assets/grid.component/grid-assets/assets/brands/panasonic.png"
+      />
+      <img
+        class="brand_images"
+        src="/assets/grid.component/grid-assets/assets/brands/samsung.png"
+      />
+      <img
+        class="brand_images"
+        src="/assets/grid.component/grid-assets/assets/brands/sony.png"
+      />
+      <img
+        class="brand_images"
+        id="icon"
+        src="/assets/grid.component/grid-assets/assets/brands/xiamomi.png"
+      />
+    </div>
+  </section>
+
+  <section id="topseller">
+    <div class="tabs">
+      <span>Topseller</span> <span>Neuheiten</span> <span>Angebote</span>
+      <span>Beliebheit</span>
+    </div>
+
+    <div class="large_photo"></div>
+
+    <div class="phones" *ngFor="let handy of (handys | async)">
+      <div class="card">
+        <img [src]="getImgURL(handy.image)" /> <span class="stars"></span>
+        <span class="phone-name">{{ handy.name }}</span>
+        <span class="handy_price_reduced">{{ handy.price_reduced }}</span>
+        <span class="handy_price">{{ handy.price }}</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="cards">
+    <div class="cards">
+      <img [src]="" />
+      <h3></h3>
+      <p></p>
+      <button>Weiter</button>
+    </div>
+  </section>
+  <app-footer></app-footer>
+</div>

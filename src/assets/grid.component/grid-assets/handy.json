@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone X",
+    "price": 1150,
+    "price_reduced": 999,
+    "rating": 4.9,
+    "topseller": true,
+    "topseller_time": 5912743,
+    "new": false,
+    "new_time": null,
+    "image": "iphone-x-spacegrey_front_zoom.png"
+  },
+  {
+    "id": 2,
+    "name": "iPhone 7",
+    "price": 849,
+    "price_reduced": 689,
+    "rating": 4.7,
+    "topseller": true,
+    "topseller_time": 6912743,
+    "new": false,
+    "new_time": null,
+    "image": "iphone-7-black_front_zoom.png"
+  },
+  {
+    "id": 3,
+    "name": "Honor 7x",
+    "price": 299,
+    "price_reduced": null,
+    "rating": 4.9,
+    "topseller": false,
+    "topseller_time": null,
+    "new": true,
+    "new_time": 12743,
+    "image": "honor-7x.png"
+  },
+  {
+    "id": 4,
+    "name": "Xiaomi MI A1",
+    "price": 199,
+    "price_reduced": null,
+    "rating": 3.2,
+    "topseller": false,
+    "topseller_time": null,
+    "new": true,
+    "new_time": 312442,
+    "image": "xiaomi-mi-a1.png"
+  },
+  {
+    "id": 5,
+    "name": "OnePlus 5T",
+    "price": 499,
+    "price_reduced": null,
+    "rating": 4.6,
+    "topseller": false,
+    "topseller_time": null,
+    "new": true,
+    "new_time": 352211,
+    "image": "one-plus-5t.png"
+  },
+  {
+    "id": 6,
+    "name": "Elephone S8",
+    "price": 189,
+    "price_reduced": null,
+    "rating": 3.9,
+    "topseller": false,
+    "topseller_time": null,
+    "new": true,
+    "new_time": 612549,
+    "image": "samsung-galaxy-s8-black_front_zoom.png"
+  },
+  {
+    "id": 7,
+    "name": "Sony Xperia XZ1",
+    "price": 699,
+    "price_reduced": null,
+    "rating": 3.9,
+    "topseller": true,
+    "topseller_time": 111511,
+    "new": false,
+    "new_time": null,
+    "image": "sony-xperia-xz1-silver_front_zoom.png"
+  },
+  {
+    "id": 8,
+    "name": "Huawei Mate 10 Pro",
+    "price": 799,
+    "price_reduced": 649,
+    "rating": 4.5,
+    "topseller": true,
+    "topseller_time": 612549,
+    "new": false,
+    "new_time": null,
+    "image": "huawei-mate-10-pro-grey_front_zoom.png"
+  }
+]

@@ -8,6 +8,12 @@ import { ResponsiveComponent } from './components/responsive/responsive.componen
 import { AboutComponent } from './components/responsive/about/about.component';
 import { ServicesComponent } from './components/responsive/services/services.component';
 import { ResponsiveHomeComponent } from './components/responsive/home/responsivehome.component';
+import { GridComponent } from './components/grid/grid.component';
+import { HeaderComponent } from './components/grid/header/header.component';
+import { SubHeaderComponent } from './components/grid/sub-header/sub-header.component';
+import { FooterComponent } from './components/grid/footer/footer.component';
+import { DataService } from './components/grid/services/data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,13 +22,19 @@ import { ResponsiveHomeComponent } from './components/responsive/home/responsive
     ResponsiveComponent,
     AboutComponent,
     ServicesComponent,
-    ResponsiveHomeComponent
+    ResponsiveHomeComponent,
+    GridComponent,
+    HeaderComponent,
+    SubHeaderComponent,
+    FooterComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
